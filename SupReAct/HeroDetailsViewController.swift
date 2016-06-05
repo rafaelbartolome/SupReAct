@@ -15,16 +15,27 @@ class HeroDetailsViewController: UIViewController {
     @IBOutlet var pictureImageView: UIImageView!
     @IBOutlet var powersTextView: UITextView!
 
+    lazy var presenter = HeroDetailsPresenter()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        realNameLabel.text =  userDefaults.objectForKey("HeroRealName") as? String
-        codeNameLabel.text =  userDefaults.objectForKey("HeroCodeName") as? String
-        if let imageName = userDefaults.objectForKey("HeroPicture") as? String {
-            pictureImageView.image = UIImage(named: imageName)
-        }
-        powersTextView.text = userDefaults.objectForKey("HeroPowersDescription") as? String
+        presenter.activate(with: self)
+    }
+}
+
+extension HeroDetailsViewController: HeroDetailsView {
+    func updateHero(name realName: String) {
+        realNameLabel.text = realName
+    }
+    func updateHero(alias codeName: String) {
+        codeNameLabel.text = codeName
+    }
+    func updateHero(picture imageName: String) {
+        pictureImageView.image = UIImage(named: imageName)
+    }
+    func updateHero(powers powersDescription: String) {
+        powersTextView.text = powersDescription
     }
 }
 

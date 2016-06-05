@@ -13,6 +13,8 @@
 		240DBF851D04A15C00B89252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240DBF841D04A15C00B89252 /* Assets.xcassets */; };
 		240DBF881D04A15C00B89252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240DBF861D04A15C00B89252 /* LaunchScreen.storyboard */; };
 		240DBF931D04A15C00B89252 /* SupReActTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF921D04A15C00B89252 /* SupReActTests.swift */; };
+		240DBF9E1D04AB0900B89252 /* HeroDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */; };
+		240DBFA01D04AC0400B89252 /* HeroDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		240DBF8E1D04A15C00B89252 /* SupReActTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupReActTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		240DBF921D04A15C00B89252 /* SupReActTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupReActTests.swift; sourceTree = "<group>"; };
 		240DBF941D04A15C00B89252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailsView.swift; sourceTree = "<group>"; };
+		240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				240DBF841D04A15C00B89252 /* Assets.xcassets */,
 				240DBF861D04A15C00B89252 /* LaunchScreen.storyboard */,
 				240DBF891D04A15C00B89252 /* Info.plist */,
+				240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */,
+				240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */,
 			);
 			path = SupReAct;
 			sourceTree = "<group>";
@@ -198,7 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				240DBF801D04A15C00B89252 /* HeroDetailsViewController.swift in Sources */,
+				240DBFA01D04AC0400B89252 /* HeroDetailsPresenter.swift in Sources */,
 				240DBF7E1D04A15C00B89252 /* AppDelegate.swift in Sources */,
+				240DBF9E1D04AB0900B89252 /* HeroDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
