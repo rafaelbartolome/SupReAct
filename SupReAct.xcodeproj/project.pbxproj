@@ -21,6 +21,9 @@
 		240DBFB01D089A9400B89252 /* HeroRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */; };
 		240DBFB21D089AB100B89252 /* DecriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFB11D089AB100B89252 /* DecriptService.swift */; };
 		240DBFB41D089AD700B89252 /* DecriptServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */; };
+		240DBFB91D08A8C900B89252 /* ShieldAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFB81D08A8C900B89252 /* ShieldAPIService.swift */; };
+		240DBFBB1D08A8F800B89252 /* HeroStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFBA1D08A8F800B89252 /* HeroStorage.swift */; };
+		240DBFBD1D08ABD500B89252 /* HeroMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFBC1D08ABD500B89252 /* HeroMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroRepositoryImp.swift; sourceTree = "<group>"; };
 		240DBFB11D089AB100B89252 /* DecriptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptService.swift; sourceTree = "<group>"; };
 		240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptServiceImp.swift; sourceTree = "<group>"; };
+		240DBFB81D08A8C900B89252 /* ShieldAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldAPIService.swift; sourceTree = "<group>"; };
+		240DBFBA1D08A8F800B89252 /* HeroStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroStorage.swift; sourceTree = "<group>"; };
+		240DBFBC1D08ABD500B89252 /* HeroMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,8 @@
 		240DBFAA1D08998200B89252 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				240DBFB71D08A8B300B89252 /* API */,
+				240DBFB61D08A8AB00B89252 /* Storage */,
 				240DBFAD1D089A8600B89252 /* HeroRepository.swift */,
 				240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */,
 			);
@@ -174,6 +182,23 @@
 				240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		240DBFB61D08A8AB00B89252 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFBA1D08A8F800B89252 /* HeroStorage.swift */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		240DBFB71D08A8B300B89252 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFB81D08A8C900B89252 /* ShieldAPIService.swift */,
+				240DBFBC1D08ABD500B89252 /* HeroMapper.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				240DBF801D04A15C00B89252 /* HeroDetailsViewController.swift in Sources */,
+				240DBFB91D08A8C900B89252 /* ShieldAPIService.swift in Sources */,
 				240DBFA01D04AC0400B89252 /* HeroDetailsPresenter.swift in Sources */,
+				240DBFBB1D08A8F800B89252 /* HeroStorage.swift in Sources */,
 				240DBFB01D089A9400B89252 /* HeroRepositoryImp.swift in Sources */,
 				240DBFA61D08974200B89252 /* GetRealName.swift in Sources */,
 				240DBF7E1D04A15C00B89252 /* AppDelegate.swift in Sources */,
@@ -286,6 +313,7 @@
 				240DBFAE1D089A8600B89252 /* HeroRepository.swift in Sources */,
 				240DBF9E1D04AB0900B89252 /* HeroDetailsView.swift in Sources */,
 				240DBFB41D089AD700B89252 /* DecriptServiceImp.swift in Sources */,
+				240DBFBD1D08ABD500B89252 /* HeroMapper.swift in Sources */,
 				240DBFA81D08982B00B89252 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

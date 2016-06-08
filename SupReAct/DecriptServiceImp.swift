@@ -17,7 +17,7 @@ final class DecriptServiceImp: DecriptService {
 private extension DecriptServiceImp {
 
     func internalDecriptHeroName(encriptedName: String) -> String {
-        //TODO
+        //Dummy result
         if let name = NSUserDefaults.standardUserDefaults().objectForKey("HeroRealName") as? String {
             return name
         }

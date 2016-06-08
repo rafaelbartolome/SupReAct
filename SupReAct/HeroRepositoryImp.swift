@@ -9,8 +9,22 @@
 import Foundation
 
 final class HeroRepositoryImp: HeroRepository {
+
+    //Dependencies
+    lazy var heroStorage = HeroStorage()
+    lazy var remoteAPIService = ShieldAPIService()
+    lazy var heroMapper = HeroMapper()
+
+    init() {
+        remoteAPIService.getHeroes{
+            [weak self] heroDictionary in
+            if let hero = self?.heroMapper.process(heroDictionary) {
+                self?.heroStorage.add(hero)
+            }
+        }
+    }
+
     func nextHero() -> Hero {
-        // TODO
-        return Hero()
+        return heroStorage.nextHero()
     }
 }
