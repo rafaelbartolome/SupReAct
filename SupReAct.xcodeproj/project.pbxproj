@@ -15,6 +15,12 @@
 		240DBF931D04A15C00B89252 /* SupReActTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF921D04A15C00B89252 /* SupReActTests.swift */; };
 		240DBF9E1D04AB0900B89252 /* HeroDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */; };
 		240DBFA01D04AC0400B89252 /* HeroDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */; };
+		240DBFA61D08974200B89252 /* GetRealName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFA51D08974200B89252 /* GetRealName.swift */; };
+		240DBFA81D08982B00B89252 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFA71D08982B00B89252 /* Hero.swift */; };
+		240DBFAE1D089A8600B89252 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFAD1D089A8600B89252 /* HeroRepository.swift */; };
+		240DBFB01D089A9400B89252 /* HeroRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */; };
+		240DBFB21D089AB100B89252 /* DecriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFB11D089AB100B89252 /* DecriptService.swift */; };
+		240DBFB41D089AD700B89252 /* DecriptServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		240DBF941D04A15C00B89252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailsView.swift; sourceTree = "<group>"; };
 		240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailsPresenter.swift; sourceTree = "<group>"; };
+		240DBFA51D08974200B89252 /* GetRealName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRealName.swift; sourceTree = "<group>"; };
+		240DBFA71D08982B00B89252 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		240DBFAD1D089A8600B89252 /* HeroRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
+		240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroRepositoryImp.swift; sourceTree = "<group>"; };
+		240DBFB11D089AB100B89252 /* DecriptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptService.swift; sourceTree = "<group>"; };
+		240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecriptServiceImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +93,12 @@
 		240DBF7C1D04A15C00B89252 /* SupReAct */ = {
 			isa = PBXGroup;
 			children = (
+				240DBFA11D0896E400B89252 /* HeroDetails */,
 				240DBF7D1D04A15C00B89252 /* AppDelegate.swift */,
-				240DBF7F1D04A15C00B89252 /* HeroDetailsViewController.swift */,
 				240DBF811D04A15C00B89252 /* Main.storyboard */,
 				240DBF841D04A15C00B89252 /* Assets.xcassets */,
 				240DBF861D04A15C00B89252 /* LaunchScreen.storyboard */,
 				240DBF891D04A15C00B89252 /* Info.plist */,
-				240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */,
-				240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */,
 			);
 			path = SupReAct;
 			sourceTree = "<group>";
@@ -100,6 +110,70 @@
 				240DBF941D04A15C00B89252 /* Info.plist */,
 			);
 			path = SupReActTests;
+			sourceTree = "<group>";
+		};
+		240DBFA11D0896E400B89252 /* HeroDetails */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFA21D0896EF00B89252 /* View */,
+				240DBFA31D0896FA00B89252 /* Presenter */,
+				240DBFA41D08970500B89252 /* Interactors */,
+				240DBFA91D08983100B89252 /* Domain */,
+				240DBFAA1D08998200B89252 /* Repository */,
+				240DBFB51D089D9700B89252 /* Services */,
+			);
+			name = HeroDetails;
+			sourceTree = "<group>";
+		};
+		240DBFA21D0896EF00B89252 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				240DBF9D1D04AB0900B89252 /* HeroDetailsView.swift */,
+				240DBF7F1D04A15C00B89252 /* HeroDetailsViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		240DBFA31D0896FA00B89252 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				240DBF9F1D04AC0400B89252 /* HeroDetailsPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		240DBFA41D08970500B89252 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFA51D08974200B89252 /* GetRealName.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		240DBFA91D08983100B89252 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFA71D08982B00B89252 /* Hero.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		240DBFAA1D08998200B89252 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFAD1D089A8600B89252 /* HeroRepository.swift */,
+				240DBFAF1D089A9400B89252 /* HeroRepositoryImp.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		240DBFB51D089D9700B89252 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				240DBFB11D089AB100B89252 /* DecriptService.swift */,
+				240DBFB31D089AD700B89252 /* DecriptServiceImp.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +279,14 @@
 			files = (
 				240DBF801D04A15C00B89252 /* HeroDetailsViewController.swift in Sources */,
 				240DBFA01D04AC0400B89252 /* HeroDetailsPresenter.swift in Sources */,
+				240DBFB01D089A9400B89252 /* HeroRepositoryImp.swift in Sources */,
+				240DBFA61D08974200B89252 /* GetRealName.swift in Sources */,
 				240DBF7E1D04A15C00B89252 /* AppDelegate.swift in Sources */,
+				240DBFB21D089AB100B89252 /* DecriptService.swift in Sources */,
+				240DBFAE1D089A8600B89252 /* HeroRepository.swift in Sources */,
 				240DBF9E1D04AB0900B89252 /* HeroDetailsView.swift in Sources */,
+				240DBFB41D089AD700B89252 /* DecriptServiceImp.swift in Sources */,
+				240DBFA81D08982B00B89252 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

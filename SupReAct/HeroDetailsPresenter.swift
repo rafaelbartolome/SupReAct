@@ -9,6 +9,10 @@
 import Foundation
 
 final class HeroDetailsPresenter {
+
+    //Dependencies
+    lazy var realNameInteractor = GetRealName()
+
     func activate(with view: HeroDetailsView) {
         view.updateHero(name: getRealName())
         view.updateHero(alias: getCodeName())
@@ -19,10 +23,7 @@ final class HeroDetailsPresenter {
 
 private extension HeroDetailsPresenter {
     func getRealName() -> String {
-        if let name = NSUserDefaults.standardUserDefaults().objectForKey("HeroRealName") as? String {
-            return name
-        }
-        return ""
+        return realNameInteractor.execute()
     }
     func getCodeName() -> String {
         if let name = NSUserDefaults.standardUserDefaults().objectForKey("HeroCodeName") as? String {
